@@ -1,0 +1,57 @@
+
+.salve-icon {
+    border: none;
+    background: none;
+    
+    border-radius: 100%;
+    border: solid 1px #ddd;
+    padding: 0.5rem;
+
+    cursor: pointer;
+    transition: all 0.6s;
+}
+
+.salve-icon i {
+    font-size: 1.2rem;
+    pointer-events: none;
+}
+
+.active {
+    background-color: #e7adad14;
+    color: #f03570;
+}
+
+.spinner {
+    display: none;
+
+    width: 1rem;
+    height: 1rem;
+    border: solid 2px #bebdbd;
+    border-radius: 100%;
+    border-bottom: none;
+
+    animation: spin 1s;
+    animation-timing-function: linear;
+    animation-duration: 1s;
+}
+
+.spinner-action {
+    display: block;
+}
+
+@keyframes spin {
+    0% {  
+        opacity: 0.1;
+        transform: rotate(0deg);
+    }
+
+    50% {
+        opacity: 1;
+    }
+
+    100% {
+    
+        transform: rotate(360deg);
+    }
+}
+
